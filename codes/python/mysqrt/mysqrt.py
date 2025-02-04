@@ -1,4 +1,9 @@
 def sqrt2(x, debug=False):
+    from numpy import nan
+    if x == 0:
+        return 0
+    elif x < 0:
+        return nan
     s=1.0
     kmax=1000
     tol = 1.0e-14
